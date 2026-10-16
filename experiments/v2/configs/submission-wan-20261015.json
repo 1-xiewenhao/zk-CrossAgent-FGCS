@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "reproduction-wan",
+  "campaignClass": "independent-reproduction",
+  "randomSeed": 20260801,
+  "regions": {
+    "coordinator": "YOUR_COORDINATOR_REGION",
+    "provider": "YOUR_PROVIDER_REGION"
+  },
+  "remote": {
+    "host": "YOUR_PROVIDER_HOST",
+    "port": 22,
+    "user": "YOUR_PROVIDER_USER",
+    "providerPath": "/ABSOLUTE/PATH/zk-CrossAgent-FGCS/scripts/v2/wan_provider_stdio.js",
+    "nodePath": "/ABSOLUTE/PATH/zk-CrossAgent-FGCS/scripts/wan/wan-node"
+  },
+  "network": {
+    "warmupSamples": 10,
+    "roundTripSamples": 100,
+    "handshakeWarmups": 2,
+    "handshakeSamples": 10
+  },
+  "protocol": {
+    "warmupSamples": 10,
+    "measuredSamples": 100,
+    "concurrencyLevels": [
+      1,
+      4,
+      8,
+      16
+    ],
+    "payloadBytes": 4096,
+    "serviceDelayMs": 5
+  },
+  "recovery": {
+    "warmupSamples": 2,
+    "measuredSamples": 20,
+    "payloadBytes": 4096,
+    "serviceDelayMs": 5
+  }
+}

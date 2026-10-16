@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "reproduction-llm",
+  "campaignClass": "independent-reproduction",
+  "randomSeed": 20260801,
+  "provider": "deepseek",
+  "baseURL": "https://api.deepseek.com",
+  "model": "deepseek-flash",
+  "warmupSamples": 1,
+  "measuredSamples": 10,
+  "temperature": 0,
+  "maxTokens": 64,
+  "prompt": "In one concise sentence, explain why exactly-once settlement matters for autonomous agent services.",
+  "thinking": "disabled"
+}

@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "reproduction-fault-gas",
+  "campaignClass": "independent-reproduction",
+  "randomSeed": 20260801,
+  "faults": {
+    "warmupRounds": 5,
+    "measuredRounds": 100,
+    "finalityDepth": 3
+  },
+  "localGas": {
+    "settlementRounds": 16,
+    "batchRootRounds": 16,
+    "verifierRounds": 20,
+    "withdrawalRounds": 16
+  },
+  "statistics": {
+    "percentiles": [
+      50,
+      95,
+      99
+    ],
+    "confidenceLevel": 0.95
+  }
+}

@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "reproduction-testnet",
+  "campaignClass": "independent-reproduction",
+  "serviceChain": {
+    "name": "polygonAmoy",
+    "chainId": 80002,
+    "deploymentConfirmations": 2,
+    "finalityConfirmations": 8
+  },
+  "settlementChain": {
+    "name": "sepolia",
+    "chainId": 11155111,
+    "deploymentConfirmations": 2,
+    "finalityConfirmations": 3
+  },
+  "benchmark": {
+    "warmupRounds": 1,
+    "measuredRounds": 5,
+    "realCount": 1
+  }
+}

@@ -1,0 +1,296 @@
+(* zk-CrossAgent v2 symbolic authentication model.
+   Every protocol message uses the public attacker-controlled channel c.
+   Capability attenuation is abstracted as the fixed child permission/budget
+   accepted by the provider; authenticity is enforced by nested signatures. *)
+
+set preciseActions = true.
+
+type skey.
+type pkey.
+
+fun pk(skey): pkey.
+fun sign(bitstring, skey): bitstring.
+reduc forall message: bitstring, key: skey;
+  checksign(sign(message, key), pk(key)) = message.
+
+fun hash(bitstring): bitstring.
+fun rootcap(bitstring, bitstring, bitstring, bitstring, bitstring): bitstring [data].
+fun childcap(bitstring, bitstring, bitstring, bitstring): bitstring [data].
+fun receipt(bitstring, bitstring, bitstring, bitstring, bitstring, bitstring): bitstring [data].
+fun confirmation(bitstring, bitstring): bitstring [data].
+fun batch(bitstring, bitstring): bitstring [data].
+
+free c: channel.
+free batchPermit, settlementPermit: channel [private].
+free requestTag, responseTag, confirmationTag, releaseTag, relayTag: bitstring.
+free protocolDomain, taskId: bitstring.
+free rootPermission, childPermission: bitstring.
+free rootBudget, childBudget, paymentAmount: bitstring.
+
+free issuerKey, buyerKey, providerKey, endpointKey: skey [private].
+
+event RootIssued(bitstring).
+event RootUsed(bitstring, bitstring).
+event ChildDelegated(bitstring).
+event ProviderCommitted(bitstring).
+event BuyerConfirmed(bitstring).
+event KeyReleased(bitstring).
+event BatchVerified(bitstring).
+event Settled(bitstring).
+
+query attacker(issuerKey).
+query attacker(buyerKey).
+query attacker(providerKey).
+query attacker(endpointKey).
+
+query callId: bitstring, root: bitstring;
+  event(RootUsed(callId, root)) ==> event(RootIssued(root)).
+query callId: bitstring;
+  event(Settled(callId)) ==> event(BatchVerified(callId)).
+query callId: bitstring;
+  event(Settled(callId)) ==> event(KeyReleased(callId)).
+query callId: bitstring;
+  event(Settled(callId)) ==> event(BuyerConfirmed(callId)).
+query callId: bitstring;
+  event(Settled(callId)) ==> event(ProviderCommitted(callId)).
+query callId: bitstring;
+  event(Settled(callId)) ==> event(ChildDelegated(callId)).
+query callId: bitstring;
+  inj-event(BuyerConfirmed(callId)) ==> inj-event(ProviderCommitted(callId)).
+query callId: bitstring;
+  inj-event(KeyReleased(callId)) ==> inj-event(BuyerConfirmed(callId)).
+
+let Issuer =
+  new rootNonce: bitstring;
+  let root = rootcap(
+    protocolDomain,
+    taskId,
+    rootNonce,
+    rootPermission,
+    rootBudget
+  ) in
+  event RootIssued(root);
+  out(c, (root, sign(root, issuerKey))).
+
+let Buyer =
+  in(c, (root: bitstring, rootSignature: bitstring));
+  let verifiedRoot = checksign(rootSignature, pk(issuerKey)) in
+  if verifiedRoot = root then
+    let rootcap(
+      =protocolDomain,
+      =taskId,
+      rootNonce: bitstring,
+      =rootPermission,
+      =rootBudget
+    ) = root in
+    new callId: bitstring;
+    new requestHash: bitstring;
+    let child = childcap(
+      root,
+      callId,
+      childPermission,
+      childBudget
+    ) in
+    event RootUsed(callId, root);
+    event ChildDelegated(callId);
+    let childSignature = sign(child, buyerKey) in
+    out(c, (
+      requestTag,
+      root,
+      rootSignature,
+      child,
+      childSignature,
+      callId,
+      requestHash
+    ));
+    in(c, (
+      =responseTag,
+      =callId,
+      providerReceipt: bitstring,
+      providerSignature: bitstring
+    ));
+    let verifiedReceipt = checksign(
+      providerSignature,
+      pk(providerKey)
+    ) in
+    if verifiedReceipt = providerReceipt then
+      let receipt(
+        =callId,
+        =child,
+        =requestHash,
+        responseHash: bitstring,
+        keyCommitment: bitstring,
+        =paymentAmount
+      ) = providerReceipt in
+      let buyerSignature = sign(
+        confirmation(providerReceipt, providerSignature),
+        buyerKey
+      ) in
+      event BuyerConfirmed(callId);
+      out(c, (
+        confirmationTag,
+        providerReceipt,
+        providerSignature,
+        buyerSignature
+      )).
+
+let Provider =
+  in(c, (
+    =requestTag,
+    root: bitstring,
+    rootSignature: bitstring,
+    child: bitstring,
+    childSignature: bitstring,
+    callId: bitstring,
+    requestHash: bitstring
+  ));
+  let verifiedRoot = checksign(rootSignature, pk(issuerKey)) in
+  if verifiedRoot = root then
+    let rootcap(
+      =protocolDomain,
+      =taskId,
+      rootNonce: bitstring,
+      =rootPermission,
+      =rootBudget
+    ) = root in
+    let verifiedChild = checksign(childSignature, pk(buyerKey)) in
+    if verifiedChild = child then
+      let childcap(
+        =root,
+        =callId,
+        =childPermission,
+        =childBudget
+      ) = child in
+      new responseHash: bitstring;
+      new deliveryKey: bitstring;
+      let providerReceipt = receipt(
+        callId,
+        child,
+        requestHash,
+        responseHash,
+        hash(deliveryKey),
+        paymentAmount
+      ) in
+      let providerSignature = sign(providerReceipt, providerKey) in
+      event ProviderCommitted(callId);
+      out(c, (
+        responseTag,
+        callId,
+        providerReceipt,
+        providerSignature
+      ));
+      in(c, (
+        =confirmationTag,
+        =providerReceipt,
+        =providerSignature,
+        buyerSignature: bitstring
+      ));
+      let verifiedConfirmation = checksign(
+        buyerSignature,
+        pk(buyerKey)
+      ) in
+      if verifiedConfirmation =
+        confirmation(providerReceipt, providerSignature)
+      then
+        event KeyReleased(callId);
+        out(c, (
+          releaseTag,
+          providerReceipt,
+          providerSignature,
+          buyerSignature,
+          deliveryKey
+        ));
+        (* Linear private permits abstract atomic consumed-call contract state.
+           They are not network messages and cannot be duplicated by c. *)
+        out(batchPermit, (callId, providerReceipt)).
+
+let Batcher =
+  in(c, (
+    =releaseTag,
+    providerReceipt: bitstring,
+    providerSignature: bitstring,
+    buyerSignature: bitstring,
+    deliveryKey: bitstring
+  ));
+  let verifiedReceipt = checksign(
+    providerSignature,
+    pk(providerKey)
+  ) in
+  if verifiedReceipt = providerReceipt then
+    let verifiedConfirmation = checksign(
+      buyerSignature,
+      pk(buyerKey)
+    ) in
+    if verifiedConfirmation =
+      confirmation(providerReceipt, providerSignature)
+    then
+      let receipt(
+        callId: bitstring,
+        child: bitstring,
+        requestHash: bitstring,
+        responseHash: bitstring,
+        =hash(deliveryKey),
+        =paymentAmount
+      ) = providerReceipt in
+      in(batchPermit, (=callId, =providerReceipt));
+      let batchStatement = batch(callId, providerReceipt) in
+      let endpointSignature = sign(batchStatement, endpointKey) in
+      event BatchVerified(callId);
+      out(c, (
+        relayTag,
+        providerReceipt,
+        providerSignature,
+        buyerSignature,
+        deliveryKey,
+        batchStatement,
+        endpointSignature
+      ));
+      out(settlementPermit, (callId, batchStatement)).
+
+let Settlement =
+  in(c, (
+    =relayTag,
+    providerReceipt: bitstring,
+    providerSignature: bitstring,
+    buyerSignature: bitstring,
+    deliveryKey: bitstring,
+    batchStatement: bitstring,
+    endpointSignature: bitstring
+  ));
+  let verifiedReceipt = checksign(
+    providerSignature,
+    pk(providerKey)
+  ) in
+  if verifiedReceipt = providerReceipt then
+    let verifiedConfirmation = checksign(
+      buyerSignature,
+      pk(buyerKey)
+    ) in
+    if verifiedConfirmation =
+      confirmation(providerReceipt, providerSignature)
+    then
+      let receipt(
+        callId: bitstring,
+        child: bitstring,
+        requestHash: bitstring,
+        responseHash: bitstring,
+        =hash(deliveryKey),
+        =paymentAmount
+      ) = providerReceipt in
+      let batch(=callId, =providerReceipt) = batchStatement in
+      let verifiedBatch = checksign(
+        endpointSignature,
+        pk(endpointKey)
+      ) in
+      if verifiedBatch = batchStatement then
+        in(settlementPermit, (=callId, =batchStatement));
+        event Settled(callId).
+
+process
+  out(c, (
+    pk(issuerKey),
+    pk(buyerKey),
+    pk(providerKey),
+    pk(endpointKey)
+  ));
+  ((!Issuer) | (!Buyer) | (!Provider) | (!Batcher) | (!Settlement))
