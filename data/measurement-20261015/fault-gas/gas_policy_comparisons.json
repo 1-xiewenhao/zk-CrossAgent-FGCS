@@ -1,0 +1,24 @@
+[
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "comparison": "full_batch_zk_vs_single_call_zk",
+    "numeratorPolicy": "zk_batch_amortized",
+    "numeratorRealCount": 16,
+    "denominatorPolicy": "zk_batch_amortized",
+    "denominatorRealCount": 1,
+    "numeratorMeanGas": 1258925.53125,
+    "denominatorMeanGas": 1621142.25,
+    "relativeChange": -0.2234330261579451
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "comparison": "full_batch_zk_vs_full_batch_non_zk",
+    "numeratorPolicy": "zk_batch_amortized",
+    "numeratorRealCount": 16,
+    "denominatorPolicy": "non_zk_batch_amortized",
+    "denominatorRealCount": 16,
+    "numeratorMeanGas": 1258925.53125,
+    "denominatorMeanGas": 1243369.96875,
+    "relativeChange": 0.01251080763647405
+  }
+]

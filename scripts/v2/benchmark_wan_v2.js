@@ -568,6 +568,7 @@ async function main() {
   const report = renderReport(config, summary, rawRows);
   const svg = renderSvg(summary, config.protocol.concurrencyLevels);
   writeJsonLines(path.join(outputDirectory, "wan_raw.jsonl"), rawRows);
+  writeJson(path.join(outputDirectory, "wan_setting_reports.json"), settingReports);
   writeCsv(path.join(outputDirectory, "wan_summary.csv"), summary);
   writeJson(path.join(outputDirectory, "wan_summary.json"), summary);
   fs.writeFileSync(path.join(outputDirectory, "network_baseline.txt"), networkBaseline);
@@ -577,6 +578,7 @@ async function main() {
   const files = {};
   for (const name of [
     "wan_raw.jsonl",
+    "wan_setting_reports.json",
     "wan_summary.csv",
     "wan_summary.json",
     "network_baseline.txt",

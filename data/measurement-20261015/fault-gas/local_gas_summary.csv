@@ -1,0 +1,11 @@
+campaignId,network,operation,metric,count,mean,stddev,ci95,p50,p95,p99,min,max
+fgcs-submission-20261015-fault-gas,hardhat-local,deploy_escrow_v2,gasUsed,1,4048358,0,"[4048358,4048358]",4048358,4048358,4048358,4048358,4048358
+fgcs-submission-20261015-fault-gas,hardhat-local,deploy_groth16_verifier_v2,gasUsed,1,446013,0,"[446013,446013]",446013,446013,446013,446013,446013
+fgcs-submission-20261015-fault-gas,hardhat-local,register_root_capability,gasUsed,1,243564,0,"[243564,243564]",243564,243564,243564,243564,243564
+fgcs-submission-20261015-fault-gas,hardhat-local,deposit_for,gasUsed,1,45536,0,"[45536,45536]",45536,45536,45536,45536,45536
+fgcs-submission-20261015-fault-gas,hardhat-local,accept_batch_root,gasUsed,16,137475.5,90.95493389585856,"[137430.93208239102,137520.06791760898]",137456,137546,137762,137444,137816
+fgcs-submission-20261015-fault-gas,hardhat-local,settle_receipt,gasUsed,16,1234777.75,2406.36798238895,"[1233598.6296886294,1235956.8703113706]",1235376,1235400,1235404.8,1225754,1235406
+fgcs-submission-20261015-fault-gas,hardhat-local,verify_groth16_batch,gasUsed,20,248889,0,"[248889,248889]",248889,248889,248889,248889,248889
+fgcs-submission-20261015-fault-gas,hardhat-local,withdraw_surplus,gasUsed,16,43464,0,"[43464,43464]",43464,43464,43464,43464,43464
+fgcs-submission-20261015-fault-gas,hardhat-local,release_unused_root_budget,gasUsed,16,68287.5,4.09878030638384,"[68285.49159764987,68289.50840235013]",68289,68289,68289,68277,68289
+fgcs-submission-20261015-fault-gas,hardhat-local,withdraw_released_budget,gasUsed,16,43464,0,"[43464,43464]",43464,43464,43464,43464,43464

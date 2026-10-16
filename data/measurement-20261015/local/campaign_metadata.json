@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "fgcs-submission-20261015-local",
+  "campaignClass": "final-submission-remeasurement",
+  "generatedAt": "2026-10-15T12:59:32.747Z",
+  "configPath": "experiments/v2/configs/submission-local-20261015.json",
+  "configSha256": "0390106a173bff92f8da1cdb3eda22bb6fc30c7e56632ee4b139bb16906b8229",
+  "host": {
+    "platform": "linux",
+    "release": "5.15.0-78-generic",
+    "architecture": "x64",
+    "logicalCpuCount": 208,
+    "cpuModels": [
+      "Intel(R) Xeon(R) Platinum 8470Q"
+    ],
+    "totalMemoryBytes": 1081799245824
+  },
+  "runtime": {
+    "node": "v20.20.1"
+  },
+  "zkArtifacts": {
+    "wasmSha256": "317b96ae39206d11efd0892e70f196ca1bcd9052e18a3dc066ba978c82bd5336",
+    "finalZkeySha256": "0a4635ec07b3323c19ad171c81787469c41d866a51972455113e976adf6c7aea",
+    "verificationKeySha256": "1194d985f3bc145ae5558ec93e7242c996a72c206180b79605fbd200f5d99862"
+  },
+  "originalManifestSha256": "153acec18b85ac8ec73b41bb2626b9116d3233cff4097d352504ed6dd99a0a9b"
+}

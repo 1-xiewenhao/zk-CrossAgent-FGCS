@@ -1,0 +1,51 @@
+{
+  "cases": 9,
+  "passed": 9,
+  "results": [
+    {
+      "name": "count-minimum",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "name": "count-maximum",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "name": "receipt-before-deadline",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "name": "receipt-at-deadline",
+      "expected": "accept",
+      "passed": true
+    },
+    {
+      "name": "zero-child-count",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "child-count-above-root",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "receipt-after-child-expiry",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "receipt-after-root-expiry",
+      "expected": "reject",
+      "passed": true
+    },
+    {
+      "name": "child-expiry-above-root",
+      "expected": "reject",
+      "passed": true
+    }
+  ]
+}

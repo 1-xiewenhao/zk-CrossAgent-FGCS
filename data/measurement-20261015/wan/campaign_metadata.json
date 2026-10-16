@@ -1,0 +1,27 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "fgcs-submission-20261015-wan-key-static",
+  "campaignClass": "final-submission-remeasurement",
+  "generatedAt": "2026-10-15T14:00:52.314Z",
+  "configPath": "reproducibility/submission-20261015/wan-key-static-config.json",
+  "configSha256": "a99d1e3887cc4ebd99e681087fba945f1508822a9f4334ea804017a7f7337b8d",
+  "regions": {
+    "coordinator": "SeetaCloud Northwest-B",
+    "provider": "SeetaCloud Beijing-B"
+  },
+  "transport": "persistent encrypted SSH stdio",
+  "coordinator": {
+    "platform": "linux",
+    "release": "5.15.0-78-generic",
+    "architecture": "x64",
+    "logicalCpuCount": 208,
+    "totalMemoryBytes": 1081799245824,
+    "runtime": "v20.20.1"
+  },
+  "samples": {
+    "total": 1146,
+    "measured": 1040,
+    "warmup": 106
+  },
+  "originalManifestSha256": "a2791ad71aa6a698910a6a244179e1806ea0cfe78b9f9dbae645395cbe46eead"
+}

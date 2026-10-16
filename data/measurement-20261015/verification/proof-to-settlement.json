@@ -1,0 +1,13 @@
+{
+  "environment": "local Hardhat network; authorized endpoint relay",
+  "freshGroth16Proof": true,
+  "offchainVerified": true,
+  "onchainVerified": true,
+  "receiptCreatedAt": 1792072594,
+  "childExpiry": 1792072594,
+  "rootExpiry": 1792072654,
+  "settlementBlockTimestamp": 1792072677,
+  "callState": "SETTLED",
+  "settledAmount": "10",
+  "reservedAmount": "0"
+}

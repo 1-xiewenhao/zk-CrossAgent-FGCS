@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "fgcs-submission-20261015-llm",
+  "campaignClass": "final-submission-remeasurement",
+  "generatedAt": "2026-10-15T13:11:19.412Z",
+  "configPath": "experiments/v2/configs/submission-llm-20261015.json",
+  "configSha256": "ed01bc1c5449081812ba4722b2ae2fb832622fe7d0a4997fa472eb23111c536d",
+  "host": {
+    "platform": "linux",
+    "release": "5.15.0-78-generic",
+    "architecture": "x64"
+  },
+  "originalManifestSha256": "7198ae9490624cee830d1c14b8a9b8b985aeeb01aee9607b47c9c237db666e1a"
+}

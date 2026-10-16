@@ -1,0 +1,14 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "fgcs-submission-20261015-fault-gas",
+  "campaignClass": "final-submission-remeasurement",
+  "generatedAt": "2026-10-15T12:59:44.284Z",
+  "configPath": "experiments/v2/configs/submission-fault-gas-20261015.json",
+  "configSha256": "bae4235d7c61eb9bbfc1797ed04e06399b3bcc30b0f3a53da0cd47f07df4bd9e",
+  "host": {
+    "platform": "linux",
+    "release": "5.15.0-78-generic",
+    "architecture": "x64"
+  },
+  "originalManifestSha256": "0c3ba7f701b1521aea857432cc7e39ad81efac0ae6705410f16f30081f31a050"
+}

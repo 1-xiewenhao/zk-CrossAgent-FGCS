@@ -1,0 +1,182 @@
+[
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "operation": "deploy_escrow_v2",
+    "metric": "gasUsed",
+    "count": 1,
+    "mean": 4048358,
+    "stddev": 0,
+    "ci95": [
+      4048358,
+      4048358
+    ],
+    "p50": 4048358,
+    "p95": 4048358,
+    "p99": 4048358,
+    "min": 4048358,
+    "max": 4048358
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "operation": "deploy_groth16_verifier_v2",
+    "metric": "gasUsed",
+    "count": 1,
+    "mean": 446013,
+    "stddev": 0,
+    "ci95": [
+      446013,
+      446013
+    ],
+    "p50": 446013,
+    "p95": 446013,
+    "p99": 446013,
+    "min": 446013,
+    "max": 446013
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "operation": "register_root_capability",
+    "metric": "gasUsed",
+    "count": 1,
+    "mean": 243564,
+    "stddev": 0,
+    "ci95": [
+      243564,
+      243564
+    ],
+    "p50": 243564,
+    "p95": 243564,
+    "p99": 243564,
+    "min": 243564,
+    "max": 243564
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "operation": "deposit_for",
+    "metric": "gasUsed",
+    "count": 1,
+    "mean": 45536,
+    "stddev": 0,
+    "ci95": [
+      45536,
+      45536
+    ],
+    "p50": 45536,
+    "p95": 45536,
+    "p99": 45536,
+    "min": 45536,
+    "max": 45536
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "operation": "accept_batch_root",
+    "metric": "gasUsed",
+    "count": 16,
+    "mean": 137475.5,
+    "stddev": 90.95493389585856,
+    "ci95": [
+      137430.93208239102,
+      137520.06791760898
+    ],
+    "p50": 137456,
+    "p95": 137546,
+    "p99": 137762,
+    "min": 137444,
+    "max": 137816
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "operation": "settle_receipt",
+    "metric": "gasUsed",
+    "count": 16,
+    "mean": 1234777.75,
+    "stddev": 2406.36798238895,
+    "ci95": [
+      1233598.6296886294,
+      1235956.8703113706
+    ],
+    "p50": 1235376,
+    "p95": 1235400,
+    "p99": 1235404.8,
+    "min": 1225754,
+    "max": 1235406
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "operation": "verify_groth16_batch",
+    "metric": "gasUsed",
+    "count": 20,
+    "mean": 248889,
+    "stddev": 0,
+    "ci95": [
+      248889,
+      248889
+    ],
+    "p50": 248889,
+    "p95": 248889,
+    "p99": 248889,
+    "min": 248889,
+    "max": 248889
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "operation": "withdraw_surplus",
+    "metric": "gasUsed",
+    "count": 16,
+    "mean": 43464,
+    "stddev": 0,
+    "ci95": [
+      43464,
+      43464
+    ],
+    "p50": 43464,
+    "p95": 43464,
+    "p99": 43464,
+    "min": 43464,
+    "max": 43464
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "operation": "release_unused_root_budget",
+    "metric": "gasUsed",
+    "count": 16,
+    "mean": 68287.5,
+    "stddev": 4.09878030638384,
+    "ci95": [
+      68285.49159764987,
+      68289.50840235013
+    ],
+    "p50": 68289,
+    "p95": 68289,
+    "p99": 68289,
+    "min": 68277,
+    "max": 68289
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "operation": "withdraw_released_budget",
+    "metric": "gasUsed",
+    "count": 16,
+    "mean": 43464,
+    "stddev": 0,
+    "ci95": [
+      43464,
+      43464
+    ],
+    "p50": 43464,
+    "p95": 43464,
+    "p99": 43464,
+    "min": 43464,
+    "max": 43464
+  }
+]

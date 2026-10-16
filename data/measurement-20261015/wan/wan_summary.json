@@ -1,0 +1,1389 @@
+[
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "transport_round_trip",
+    "transportMode": "local",
+    "concurrency": null,
+    "metric": "roundTripMs",
+    "count": 100,
+    "mean": 0.08823822021484375,
+    "stddev": 0.09439481474059587,
+    "ci95": [
+      0.06973683652568696,
+      0.10673960390400053
+    ],
+    "p50": 0.06545543670654297,
+    "p95": 0.17743577957153317,
+    "p99": 0.3967467498779323,
+    "min": 0.05000495910644531,
+    "max": 0.9070644378662109
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "transport_handshake",
+    "transportMode": "local",
+    "concurrency": null,
+    "metric": "handshakeMs",
+    "count": 10,
+    "mean": 43.411370849609376,
+    "stddev": 5.286138895293203,
+    "ci95": [
+      40.134988017931335,
+      46.68775368128742
+    ],
+    "p50": 44.71911334991455,
+    "p95": 50.10966300964355,
+    "p99": 51.77093315124512,
+    "min": 36.39999198913574,
+    "max": 52.18625068664551
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "transport_round_trip",
+    "transportMode": "remote",
+    "concurrency": null,
+    "metric": "roundTripMs",
+    "count": 100,
+    "mean": 33.761814746856686,
+    "stddev": 59.41674968221772,
+    "ci95": [
+      22.11613180914201,
+      45.40749768457136
+    ],
+    "p50": 22.417821884155273,
+    "p95": 23.334181594848634,
+    "p99": 250.4408483505261,
+    "min": 21.912525177001953,
+    "max": 481.2612419128418
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "transport_handshake",
+    "transportMode": "remote",
+    "concurrency": null,
+    "metric": "handshakeMs",
+    "count": 10,
+    "mean": 2058.2830362319946,
+    "stddev": 2439.4259891686256,
+    "ci95": [
+      546.311143632304,
+      3570.254928831685
+    ],
+    "p50": 497.4924840927124,
+    "p95": 5657.1175151824955,
+    "p99": 5717.903904647827,
+    "min": 479.22807121276855,
+    "max": 5733.10050201416
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 1,
+    "metric": "networkRoundTripMs",
+    "count": 100,
+    "mean": 5.374766578674317,
+    "stddev": 0.2877851730949205,
+    "ci95": [
+      5.318360684747712,
+      5.431172472600921
+    ],
+    "p50": 5.370939254760742,
+    "p95": 5.713324069976807,
+    "p99": 5.996843147277834,
+    "min": 4.323976516723633,
+    "max": 6.293661117553711
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 1,
+    "metric": "remoteServiceMs",
+    "count": 100,
+    "mean": 5.096771640777588,
+    "stddev": 0.260687419646758,
+    "ci95": [
+      5.045676906526824,
+      5.147866375028352
+    ],
+    "p50": 5.129992485046387,
+    "p95": 5.347835731506348,
+    "p99": 5.544423446655274,
+    "min": 4.123647689819336,
+    "max": 5.61158561706543
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 1,
+    "metric": "transportOverheadMs",
+    "count": 100,
+    "mean": 0.2779949378967285,
+    "stddev": 0.08698621878752169,
+    "ci95": [
+      0.2609456390143743,
+      0.29504423677908276
+    ],
+    "p50": 0.24474334716796875,
+    "p95": 0.42511568069458006,
+    "p99": 0.4983878707885752,
+    "min": 0.18231964111328125,
+    "max": 0.6820755004882812
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 1,
+    "metric": "authorizationMs",
+    "count": 100,
+    "mean": 7.931961040496827,
+    "stddev": 13.086873484832518,
+    "ci95": [
+      5.366933837469653,
+      10.496988243524001
+    ],
+    "p50": 6.648934364318848,
+    "p95": 9.523042583465575,
+    "p99": 16.697611598969125,
+    "min": 4.389554977416992,
+    "max": 136.54084396362305
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 1,
+    "metric": "encryptedCommitMs",
+    "count": 100,
+    "mean": 5.293022403717041,
+    "stddev": 2.4380752781287063,
+    "ci95": [
+      4.815159649203815,
+      5.770885158230267
+    ],
+    "p50": 5.388593673706055,
+    "p95": 8.041777324676513,
+    "p99": 12.169223613739081,
+    "min": 3.710418701171875,
+    "max": 25.22625160217285
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 1,
+    "metric": "keyReleaseMs",
+    "count": 100,
+    "mean": 8.826397075653077,
+    "stddev": 1.8449902543027932,
+    "ci95": [
+      8.46477898580973,
+      9.188015165496424
+    ],
+    "p50": 8.359207153320312,
+    "p95": 13.024378490447997,
+    "p99": 14.761066589355496,
+    "min": 5.7572479248046875,
+    "max": 20.20309066772461
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 1,
+    "metric": "totalMs",
+    "count": 100,
+    "mean": 43.393208026885986,
+    "stddev": 18.428833129766772,
+    "ci95": [
+      39.781156733451695,
+      47.00525932032028
+    ],
+    "p50": 40.39993190765381,
+    "p95": 52.09875011444091,
+    "p99": 80.89253074646065,
+    "min": 33.75115203857422,
+    "max": 215.70464324951172
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 4,
+    "metric": "networkRoundTripMs",
+    "count": 100,
+    "mean": 13.542169513702392,
+    "stddev": 6.578602800758923,
+    "ci95": [
+      12.252763364753644,
+      14.83157566265114
+    ],
+    "p50": 14.331537246704102,
+    "p95": 25.263686180114743,
+    "p99": 29.36030429840088,
+    "min": 4.446359634399414,
+    "max": 29.38224983215332
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 4,
+    "metric": "remoteServiceMs",
+    "count": 100,
+    "mean": 5.2540895462036135,
+    "stddev": 0.4214962081898596,
+    "ci95": [
+      5.1714762893984005,
+      5.336702803008826
+    ],
+    "p50": 5.327603340148926,
+    "p95": 5.754542255401612,
+    "p99": 5.975947170257568,
+    "min": 4.217632293701172,
+    "max": 5.981119155883789
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 4,
+    "metric": "transportOverheadMs",
+    "count": 100,
+    "mean": 8.28807996749878,
+    "stddev": 6.548844297677637,
+    "ci95": [
+      7.0045064851539625,
+      9.571653449843597
+    ],
+    "p50": 9.036713600158691,
+    "p95": 20.151469612121577,
+    "p99": 23.976799907684327,
+    "min": 0.19781494140625,
+    "max": 24.04599952697754
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 4,
+    "metric": "authorizationMs",
+    "count": 100,
+    "mean": 5.049962501525879,
+    "stddev": 1.5649078438016208,
+    "ci95": [
+      4.743240564140762,
+      5.356684438910997
+    ],
+    "p50": 4.579795837402344,
+    "p95": 7.377846050262448,
+    "p99": 12.183108234405521,
+    "min": 4.329364776611328,
+    "max": 12.74136734008789
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 4,
+    "metric": "encryptedCommitMs",
+    "count": 100,
+    "mean": 11.316228199005128,
+    "stddev": 5.3006357850438315,
+    "ci95": [
+      10.277303585136536,
+      12.355152812873719
+    ],
+    "p50": 10.792715072631836,
+    "p95": 17.981085205078127,
+    "p99": 27.114868240356472,
+    "min": 3.706930160522461,
+    "max": 32.49494934082031
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 4,
+    "metric": "keyReleaseMs",
+    "count": 100,
+    "mean": 7.329381637573242,
+    "stddev": 13.036740469974104,
+    "ci95": [
+      4.774180505458317,
+      9.884582769688166
+    ],
+    "p50": 5.661296844482422,
+    "p95": 9.231167793273926,
+    "p99": 12.385683231354399,
+    "min": 5.26228141784668,
+    "max": 135.96405601501465
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 4,
+    "metric": "totalMs",
+    "count": 100,
+    "mean": 89.45481338500977,
+    "stddev": 23.95086500252919,
+    "ci95": [
+      84.76044384451404,
+      94.1491829255055
+    ],
+    "p50": 84.70759391784668,
+    "p95": 111.78604574203476,
+    "p99": 189.03123346328752,
+    "min": 66.37751579284668,
+    "max": 223.5550079345703
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 8,
+    "metric": "networkRoundTripMs",
+    "count": 100,
+    "mean": 15.061979999542237,
+    "stddev": 5.860260347557852,
+    "ci95": [
+      13.913368971420898,
+      16.210591027663575
+    ],
+    "p50": 14.778630256652832,
+    "p95": 23.735386371612528,
+    "p99": 30.974694900512695,
+    "min": 4.881555557250977,
+    "max": 30.975231170654297
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 8,
+    "metric": "remoteServiceMs",
+    "count": 100,
+    "mean": 5.411319274902343,
+    "stddev": 0.41255103294692047,
+    "ci95": [
+      5.330459272444747,
+      5.49217927735994
+    ],
+    "p50": 5.398492813110352,
+    "p95": 6.158819103240966,
+    "p99": 6.57057996749878,
+    "min": 4.512256622314453,
+    "max": 6.744911193847656
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 8,
+    "metric": "transportOverheadMs",
+    "count": 100,
+    "mean": 9.650660724639893,
+    "stddev": 5.857448750459942,
+    "ci95": [
+      8.502600769549744,
+      10.798720679730042
+    ],
+    "p50": 9.276307106018066,
+    "p95": 18.614349937438945,
+    "p99": 26.067737979888918,
+    "min": 0.2464008331298828,
+    "max": 26.089303970336914
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 8,
+    "metric": "authorizationMs",
+    "count": 100,
+    "mean": 4.784732551574707,
+    "stddev": 0.6449895326688497,
+    "ci95": [
+      4.658314603171612,
+      4.9111504999778015
+    ],
+    "p50": 4.606049537658691,
+    "p95": 5.515346908569335,
+    "p99": 8.033533306121827,
+    "min": 4.385892868041992,
+    "max": 8.244285583496094
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 8,
+    "metric": "encryptedCommitMs",
+    "count": 100,
+    "mean": 29.1237087059021,
+    "stddev": 12.305486156730344,
+    "ci95": [
+      26.711833419182952,
+      31.53558399262125
+    ],
+    "p50": 31.832436561584473,
+    "p95": 44.74697656631469,
+    "p99": 47.065013141632086,
+    "min": 3.6844120025634766,
+    "max": 48.26097297668457
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 8,
+    "metric": "keyReleaseMs",
+    "count": 100,
+    "mean": 5.735120124816895,
+    "stddev": 0.52162408759435,
+    "ci95": [
+      5.632881803648402,
+      5.837358445985387
+    ],
+    "p50": 5.596652030944824,
+    "p95": 6.312563514709472,
+    "p99": 8.736499786376955,
+    "min": 5.2857513427734375,
+    "max": 8.783517837524414
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 8,
+    "metric": "totalMs",
+    "count": 100,
+    "mean": 155.64213186264038,
+    "stddev": 22.136038020128108,
+    "ci95": [
+      151.30346841069527,
+      159.9807953145855
+    ],
+    "p50": 157.89242935180664,
+    "p95": 180.32590560913084,
+    "p99": 184.15839551925663,
+    "min": 73.21087646484375,
+    "max": 188.64944458007812
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 16,
+    "metric": "networkRoundTripMs",
+    "count": 100,
+    "mean": 48.885845470428464,
+    "stddev": 57.42849843127301,
+    "ci95": [
+      37.62985977789896,
+      60.14183116295797
+    ],
+    "p50": 15.704748153686523,
+    "p95": 162.3413847923279,
+    "p99": 231.0999960708618,
+    "min": 5.33848762512207,
+    "max": 231.11505317687988
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 16,
+    "metric": "remoteServiceMs",
+    "count": 100,
+    "mean": 5.924319820404053,
+    "stddev": 0.5907603657907926,
+    "ci95": [
+      5.808530788709057,
+      6.040108852099048
+    ],
+    "p50": 5.8657684326171875,
+    "p95": 7.411356735229493,
+    "p99": 7.719866065979004,
+    "min": 4.712928771972656,
+    "max": 7.794290542602539
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 16,
+    "metric": "transportOverheadMs",
+    "count": 100,
+    "mean": 42.96152565002441,
+    "stddev": 57.1850287928129,
+    "ci95": [
+      31.753260006633084,
+      54.16979129341574
+    ],
+    "p50": 9.827638626098633,
+    "p95": 156.14736642837525,
+    "p99": 224.88244913101195,
+    "min": 0.38077545166015625,
+    "max": 224.95146369934082
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 16,
+    "metric": "authorizationMs",
+    "count": 100,
+    "mean": 7.715409488677978,
+    "stddev": 11.512835646632139,
+    "ci95": [
+      5.458893701938079,
+      9.971925275417878
+    ],
+    "p50": 4.743313789367676,
+    "p95": 15.580627918243403,
+    "p99": 26.0100101280217,
+    "min": 4.433206558227539,
+    "max": 115.41439819335938
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 16,
+    "metric": "encryptedCommitMs",
+    "count": 100,
+    "mean": 50.436392059326174,
+    "stddev": 30.96210225728094,
+    "ci95": [
+      44.36782001689911,
+      56.50496410175324
+    ],
+    "p50": 50.34840106964111,
+    "p95": 112.39689950942991,
+    "p99": 124.43499921798708,
+    "min": 3.916189193725586,
+    "max": 127.69772529602051
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 16,
+    "metric": "keyReleaseMs",
+    "count": 100,
+    "mean": 7.791737957000732,
+    "stddev": 4.103798329949647,
+    "ci95": [
+      6.987393484330601,
+      8.596082429670863
+    ],
+    "p50": 5.965052604675293,
+    "p95": 16.742197799682614,
+    "p99": 21.520219650268583,
+    "min": 5.363990783691406,
+    "max": 26.83305549621582
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 16,
+    "metric": "totalMs",
+    "count": 100,
+    "mean": 397.21808950424196,
+    "stddev": 137.16418086797057,
+    "ci95": [
+      370.3339100541197,
+      424.1022689543642
+    ],
+    "p50": 344.77486419677734,
+    "p95": 623.5257584571838,
+    "p99": 645.7579829597473,
+    "min": 78.21689224243164,
+    "max": 651.8923034667969
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 1,
+    "metric": "networkRoundTripMs",
+    "count": 100,
+    "mean": 50.01732816696167,
+    "stddev": 66.98519513880429,
+    "ci95": [
+      36.88822991975603,
+      63.14642641416731
+    ],
+    "p50": 28.40768337249756,
+    "p95": 148.62553815841676,
+    "p99": 376.3500518226626,
+    "min": 27.07877540588379,
+    "max": 421.46528244018555
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 1,
+    "metric": "remoteServiceMs",
+    "count": 100,
+    "mean": 5.213628616333008,
+    "stddev": 0.3098665954562398,
+    "ci95": [
+      5.152894763623585,
+      5.274362469042431
+    ],
+    "p50": 5.303735733032227,
+    "p95": 5.51420783996582,
+    "p99": 5.6385884094238286,
+    "min": 4.2932891845703125,
+    "max": 5.753063201904297
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 1,
+    "metric": "transportOverheadMs",
+    "count": 100,
+    "mean": 44.803699550628664,
+    "stddev": 67.04892749261145,
+    "ci95": [
+      31.662109762076817,
+      57.94528933918051
+    ],
+    "p50": 23.128952980041504,
+    "p95": 143.32791337966918,
+    "p99": 372.03829561233545,
+    "min": 22.295753479003906,
+    "max": 416.150089263916
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 1,
+    "metric": "authorizationMs",
+    "count": 100,
+    "mean": 15.074398307800292,
+    "stddev": 11.117300914680687,
+    "ci95": [
+      12.895407328522879,
+      17.253389287077706
+    ],
+    "p50": 13.409947395324707,
+    "p95": 17.34360132217407,
+    "p99": 27.343415431976815,
+    "min": 8.124547958374023,
+    "max": 123.13327026367188
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 1,
+    "metric": "encryptedCommitMs",
+    "count": 100,
+    "mean": 13.266421051025391,
+    "stddev": 9.602823990445984,
+    "ci95": [
+      11.384267548897979,
+      15.148574553152804
+    ],
+    "p50": 11.037492752075195,
+    "p95": 15.70119771957397,
+    "p99": 52.77016719818135,
+    "min": 9.024589538574219,
+    "max": 90.68548965454102
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 1,
+    "metric": "keyReleaseMs",
+    "count": 100,
+    "mean": 18.772346115112306,
+    "stddev": 8.252021492453872,
+    "ci95": [
+      17.154949902591348,
+      20.389742327633265
+    ],
+    "p50": 17.307053565979004,
+    "p95": 21.02310705184936,
+    "p99": 62.81061326980601,
+    "min": 13.13216781616211,
+    "max": 83.19318580627441
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 1,
+    "metric": "totalMs",
+    "count": 100,
+    "mean": 127.31191223144532,
+    "stddev": 71.53243053359743,
+    "ci95": [
+      113.29155584686022,
+      141.3322686160304
+    ],
+    "p50": 100.29044246673584,
+    "p95": 228.16330776214596,
+    "p99": 463.77623529434226,
+    "min": 85.29811096191406,
+    "max": 504.17075538635254
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 4,
+    "metric": "networkRoundTripMs",
+    "count": 100,
+    "mean": 145.20084802627562,
+    "stddev": 229.41935662635777,
+    "ci95": [
+      100.2346541275095,
+      190.16704192504176
+    ],
+    "p50": 62.953407287597656,
+    "p95": 872.3512187957764,
+    "p99": 953.6519522666931,
+    "min": 26.957178115844727,
+    "max": 954.6757278442383
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 4,
+    "metric": "remoteServiceMs",
+    "count": 100,
+    "mean": 5.369348335266113,
+    "stddev": 0.3979779969732851,
+    "ci95": [
+      5.291344647859349,
+      5.447352022672877
+    ],
+    "p50": 5.433103561401367,
+    "p95": 5.977682876586914,
+    "p99": 6.160690078735352,
+    "min": 4.6304931640625,
+    "max": 6.192390441894531
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 4,
+    "metric": "transportOverheadMs",
+    "count": 100,
+    "mean": 139.83149969100953,
+    "stddev": 229.39732192842212,
+    "ci95": [
+      94.8696245930388,
+      184.79337478898026
+    ],
+    "p50": 58.131465911865234,
+    "p95": 866.4806669235229,
+    "p99": 947.9965664100647,
+    "min": 21.97202491760254,
+    "max": 949.563232421875
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 4,
+    "metric": "authorizationMs",
+    "count": 100,
+    "mean": 7.406979084014893,
+    "stddev": 2.5539689416087703,
+    "ci95": [
+      6.906401171459573,
+      7.907556996570212
+    ],
+    "p50": 7.304657936096191,
+    "p95": 11.898464488983155,
+    "p99": 12.315428562164323,
+    "min": 4.354450225830078,
+    "max": 15.66096305847168
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 4,
+    "metric": "encryptedCommitMs",
+    "count": 100,
+    "mean": 13.949844341278077,
+    "stddev": 9.58847057670946,
+    "ci95": [
+      12.070504108243023,
+      15.82918457431313
+    ],
+    "p50": 11.86392593383789,
+    "p95": 29.79148921966552,
+    "p99": 51.16691419601446,
+    "min": 3.7134780883789062,
+    "max": 62.083242416381836
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 4,
+    "metric": "keyReleaseMs",
+    "count": 100,
+    "mean": 14.135454730987549,
+    "stddev": 17.376271320035826,
+    "ci95": [
+      10.729705552260526,
+      17.54120390971457
+    ],
+    "p50": 10.177132606506348,
+    "p95": 19.83127107620239,
+    "p99": 103.55960432052628,
+    "min": 5.339109420776367,
+    "max": 132.7075538635254
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 4,
+    "metric": "totalMs",
+    "count": 100,
+    "mean": 261.9153733634949,
+    "stddev": 236.19761941313732,
+    "ci95": [
+      215.62063995851997,
+      308.2101067684698
+    ],
+    "p50": 191.7802791595459,
+    "p95": 991.926567363739,
+    "p99": 1090.2428672599792,
+    "min": 84.73322868347168,
+    "max": 1100.510814666748
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 8,
+    "metric": "networkRoundTripMs",
+    "count": 100,
+    "mean": 181.89014125823974,
+    "stddev": 361.84831032053535,
+    "ci95": [
+      110.96787243541482,
+      252.81241008106466
+    ],
+    "p50": 103.26249027252197,
+    "p95": 339.8068252563475,
+    "p99": 2152.9794931411748,
+    "min": 26.962383270263672,
+    "max": 2261.1498069763184
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 8,
+    "metric": "remoteServiceMs",
+    "count": 100,
+    "mean": 5.169188156127929,
+    "stddev": 0.30534864978452275,
+    "ci95": [
+      5.109339820770163,
+      5.2290364914856955
+    ],
+    "p50": 5.146600723266602,
+    "p95": 5.649356269836425,
+    "p99": 5.791061439514161,
+    "min": 4.598773956298828,
+    "max": 5.976871490478516
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 8,
+    "metric": "transportOverheadMs",
+    "count": 100,
+    "mean": 176.72095310211182,
+    "stddev": 361.8174984733828,
+    "ci95": [
+      105.8047234013288,
+      247.63718280289484
+    ],
+    "p50": 97.7903995513916,
+    "p95": 334.46695985794054,
+    "p99": 2147.418024139405,
+    "min": 21.946605682373047,
+    "max": 2256.3622550964355
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 8,
+    "metric": "authorizationMs",
+    "count": 100,
+    "mean": 6.288048629760742,
+    "stddev": 9.96749034121353,
+    "ci95": [
+      4.3344205228828905,
+      8.241676736638594
+    ],
+    "p50": 4.6522064208984375,
+    "p95": 9.002884292602538,
+    "p99": 11.219892673492911,
+    "min": 4.373222351074219,
+    "max": 103.98539161682129
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 8,
+    "metric": "encryptedCommitMs",
+    "count": 100,
+    "mean": 31.12293249130249,
+    "stddev": 29.818050809419745,
+    "ci95": [
+      25.27859453265622,
+      36.96727044994876
+    ],
+    "p50": 19.646738052368164,
+    "p95": 91.09802093505859,
+    "p99": 127.53513292312633,
+    "min": 3.7477855682373047,
+    "max": 147.85897254943848
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 8,
+    "metric": "keyReleaseMs",
+    "count": 100,
+    "mean": 10.519321994781494,
+    "stddev": 14.191412291400596,
+    "ci95": [
+      7.737805185666978,
+      13.30083880389601
+    ],
+    "p50": 7.845213890075684,
+    "p95": 16.030731296539305,
+    "p99": 86.64918516159072,
+    "min": 5.304668426513672,
+    "max": 115.28109931945801
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 8,
+    "metric": "totalMs",
+    "count": 100,
+    "mean": 362.03737159729,
+    "stddev": 371.28859002821247,
+    "ci95": [
+      289.26480795176036,
+      434.8099352428197
+    ],
+    "p50": 324.3693628311157,
+    "p95": 527.0016369819641,
+    "p99": 2369.6974171447755,
+    "min": 109.72635269165039,
+    "max": 2386.470859527588
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 16,
+    "metric": "networkRoundTripMs",
+    "count": 100,
+    "mean": 179.22433849334718,
+    "stddev": 156.0416467428475,
+    "ci95": [
+      148.64017573174908,
+      209.80850125494527
+    ],
+    "p50": 142.14654541015625,
+    "p95": 592.7821168899536,
+    "p99": 592.8132057762147,
+    "min": 27.723976135253906,
+    "max": 592.8158550262451
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 16,
+    "metric": "remoteServiceMs",
+    "count": 100,
+    "mean": 5.719934997558593,
+    "stddev": 0.5849502458246676,
+    "ci95": [
+      5.605284749376959,
+      5.834585245740228
+    ],
+    "p50": 5.6174163818359375,
+    "p95": 6.548071479797363,
+    "p99": 6.734462242126465,
+    "min": 4.467868804931641,
+    "max": 6.785396575927734
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 16,
+    "metric": "transportOverheadMs",
+    "count": 100,
+    "mean": 173.50440349578858,
+    "stddev": 156.20639537624496,
+    "ci95": [
+      142.88795000204456,
+      204.1208569895326
+    ],
+    "p50": 135.88496017456055,
+    "p95": 587.3071728706359,
+    "p99": 587.6989413261414,
+    "min": 22.93136978149414,
+    "max": 587.7077312469482
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 16,
+    "metric": "authorizationMs",
+    "count": 100,
+    "mean": 6.022563915252686,
+    "stddev": 6.065401009235524,
+    "ci95": [
+      4.833745317442523,
+      7.211382513062849
+    ],
+    "p50": 4.557377815246582,
+    "p95": 12.54502363204956,
+    "p99": 22.712429218292424,
+    "min": 4.317907333374023,
+    "max": 58.864606857299805
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 16,
+    "metric": "encryptedCommitMs",
+    "count": 100,
+    "mean": 39.15987771987915,
+    "stddev": 21.75646920547018,
+    "ci95": [
+      34.89560975560699,
+      43.424145684151306
+    ],
+    "p50": 37.751235008239746,
+    "p95": 80.52994213104247,
+    "p99": 84.04205966949463,
+    "min": 3.679443359375,
+    "max": 85.1103286743164
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 16,
+    "metric": "keyReleaseMs",
+    "count": 100,
+    "mean": 6.320552730560303,
+    "stddev": 1.6128121641478996,
+    "ci95": [
+      6.004441546387315,
+      6.636663914733291
+    ],
+    "p50": 5.658390045166016,
+    "p95": 9.643563747406006,
+    "p99": 12.603168239593515,
+    "min": 5.257051467895508,
+    "max": 14.192127227783203
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 16,
+    "metric": "totalMs",
+    "count": 100,
+    "mean": 440.6150268936157,
+    "stddev": 188.58875609613887,
+    "ci95": [
+      403.6516306987725,
+      477.5784230884589
+    ],
+    "p50": 398.0881748199463,
+    "p95": 845.611185646057,
+    "p99": 867.6251744270324,
+    "min": 76.9980640411377,
+    "max": 873.032901763916
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_provider_recovery",
+    "transportMode": "remote",
+    "concurrency": null,
+    "metric": "remoteServiceMs",
+    "count": 20,
+    "mean": 6.139608764648438,
+    "stddev": 0.5400594450295574,
+    "ci95": [
+      5.902917276976965,
+      6.37630025231991
+    ],
+    "p50": 5.885873794555664,
+    "p95": 6.954572677612305,
+    "p99": 6.986202621459961,
+    "min": 5.487644195556641,
+    "max": 6.994110107421875
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_provider_recovery",
+    "transportMode": "remote",
+    "concurrency": null,
+    "metric": "crashDetectedMs",
+    "count": 20,
+    "mean": 30.191697978973387,
+    "stddev": 1.2476080096940778,
+    "ci95": [
+      29.644909660459348,
+      30.738486297487427
+    ],
+    "p50": 30.055727005004883,
+    "p95": 31.937521743774415,
+    "p99": 32.536327896118166,
+    "min": 27.945817947387695,
+    "max": 32.6860294342041
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_provider_recovery",
+    "transportMode": "remote",
+    "concurrency": null,
+    "metric": "reconnectHandshakeMs",
+    "count": 20,
+    "mean": 612.391721534729,
+    "stddev": 207.68213950630144,
+    "ci95": [
+      521.3710107315868,
+      703.4124323378711
+    ],
+    "p50": 499.2589635848999,
+    "p95": 911.4063480377199,
+    "p99": 1070.5028897857665,
+    "min": 426.1128101348877,
+    "max": 1110.2770252227783
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_provider_recovery",
+    "transportMode": "remote",
+    "concurrency": null,
+    "metric": "retryRoundTripMs",
+    "count": 20,
+    "mean": 59.716998958587645,
+    "stddev": 85.7702507053453,
+    "ci95": [
+      22.126529197814776,
+      97.30746871936051
+    ],
+    "p50": 29.82557773590088,
+    "p95": 234.08907737731946,
+    "p99": 344.87984703063944,
+    "min": 28.25016975402832,
+    "max": 372.5775394439697
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_provider_recovery",
+    "transportMode": "remote",
+    "concurrency": null,
+    "metric": "recoveryTotalMs",
+    "count": 20,
+    "mean": 702.3582074165345,
+    "stddev": 241.85929557487233,
+    "ci95": [
+      596.3586975409912,
+      808.3577172920777
+    ],
+    "p50": 558.9971036911011,
+    "p95": 1152.3834372520448,
+    "p99": 1183.4421446037293,
+    "min": 485.13219451904297,
+    "max": 1191.2068214416504
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 1,
+    "metric": "throughputOpsPerSecond",
+    "count": 100,
+    "mean": 23.02739745056139,
+    "stddev": 0,
+    "ci95": [
+      23.02739745056139,
+      23.02739745056139
+    ],
+    "p50": 23.02739745056139,
+    "p95": 23.02739745056139,
+    "p99": 23.02739745056139,
+    "min": 23.02739745056139,
+    "max": 23.02739745056139
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 4,
+    "metric": "throughputOpsPerSecond",
+    "count": 100,
+    "mean": 38.056125445104996,
+    "stddev": 0,
+    "ci95": [
+      38.056125445104996,
+      38.056125445104996
+    ],
+    "p50": 38.056125445104996,
+    "p95": 38.056125445104996,
+    "p99": 38.056125445104996,
+    "min": 38.056125445104996,
+    "max": 38.056125445104996
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 8,
+    "metric": "throughputOpsPerSecond",
+    "count": 100,
+    "mean": 43.32227977620628,
+    "stddev": 0,
+    "ci95": [
+      43.32227977620628,
+      43.32227977620628
+    ],
+    "p50": 43.32227977620628,
+    "p95": 43.32227977620628,
+    "p99": 43.32227977620628,
+    "min": 43.32227977620628,
+    "max": 43.32227977620628
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "local",
+    "concurrency": 16,
+    "metric": "throughputOpsPerSecond",
+    "count": 100,
+    "mean": 33.51558723062494,
+    "stddev": 0,
+    "ci95": [
+      33.51558723062494,
+      33.51558723062494
+    ],
+    "p50": 33.51558723062494,
+    "p95": 33.51558723062494,
+    "p99": 33.51558723062494,
+    "min": 33.51558723062494,
+    "max": 33.51558723062494
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 1,
+    "metric": "throughputOpsPerSecond",
+    "count": 100,
+    "mean": 7.850350923457054,
+    "stddev": 0,
+    "ci95": [
+      7.850350923457054,
+      7.850350923457054
+    ],
+    "p50": 7.850350923457054,
+    "p95": 7.850350923457054,
+    "p99": 7.850350923457054,
+    "min": 7.850350923457054,
+    "max": 7.850350923457054
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 4,
+    "metric": "throughputOpsPerSecond",
+    "count": 100,
+    "mean": 13.250323823288259,
+    "stddev": 0,
+    "ci95": [
+      13.250323823288259,
+      13.250323823288259
+    ],
+    "p50": 13.250323823288259,
+    "p95": 13.250323823288259,
+    "p99": 13.250323823288259,
+    "min": 13.250323823288259,
+    "max": 13.250323823288259
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 8,
+    "metric": "throughputOpsPerSecond",
+    "count": 100,
+    "mean": 15.78339275994489,
+    "stddev": 0,
+    "ci95": [
+      15.78339275994489,
+      15.78339275994489
+    ],
+    "p50": 15.78339275994489,
+    "p95": 15.78339275994489,
+    "p99": 15.78339275994489,
+    "min": 15.78339275994489,
+    "max": 15.78339275994489
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-wan-key-static",
+    "recordType": "wan_protocol_sample",
+    "transportMode": "remote",
+    "concurrency": 16,
+    "metric": "throughputOpsPerSecond",
+    "count": 100,
+    "mean": 28.56866780704777,
+    "stddev": 0,
+    "ci95": [
+      28.56866780704777,
+      28.56866780704777
+    ],
+    "p50": 28.56866780704777,
+    "p95": 28.56866780704777,
+    "p99": 28.56866780704777,
+    "min": 28.56866780704777,
+    "max": 28.56866780704777
+  }
+]

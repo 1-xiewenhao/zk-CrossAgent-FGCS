@@ -1,7 +1,7 @@
 {
   "sourceSnapshotSha256": "f2bb4eea3e39945a2119d1f9bcf3d566647257516bc2ab1bc50698f56069ffd2",
   "sourceSnapshotDate": "2026-10-15",
-  "scope": "code, formal models, workload configurations and reproduction instructions; no measurement datasets",
+  "scope": "code, formal models, workload configurations, retained measurement records, and reproduction/recalculation instructions",
   "unchangedCoreFiles": [
     "circuits/v2/zk_crossagent_v2.circom",
     "contracts/v2/BatchInboxV2.sol",
@@ -112,6 +112,11 @@
     "Campaign identifiers changed to independent reproduction names.",
     "Obsolete reports, comparisons and server-specific campaign orchestrators omitted.",
     "WAN metadata caching before timing included with portable paths.",
-    "Package name and npm command aliases updated; dependency resolutions retained."
-  ]
+    "Package name and npm command aliases updated; dependency resolutions retained.",
+    "Retained final measurement campaigns and historical verification reports added with per-file provenance and documented metadata sanitization.",
+    "Offline Python statistics audit and table/figure mapping added.",
+    "WAN setting reports now serialized after all measurements for future reruns; historical aggregate-window timers were not retained and are not reconstructed as raw observations."
+  ],
+  "artifactRelease": "fgcs-artifact-v1.1.0",
+  "measurementManifest": "data/measurement-20261015/manifest.json"
 }

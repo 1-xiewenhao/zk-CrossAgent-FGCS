@@ -1,0 +1,303 @@
+{
+  "schemaVersion": 1,
+  "measurementDate": "2026-10-15",
+  "publicationRelease": "fgcs-artifact-v1.1.0",
+  "sourceSnapshotSha256": "f2bb4eea3e39945a2119d1f9bcf3d566647257516bc2ab1bc50698f56069ffd2",
+  "policy": "Retained observations; no new measurements, imputation, or sample removal beyond explicitly flagged warm-ups during analysis.",
+  "files": [
+    {
+      "path": "fault-gas/campaign_config.json",
+      "sha256": "bae4235d7c61eb9bbfc1797ed04e06399b3bcc30b0f3a53da0cd47f07df4bd9e",
+      "sizeBytes": 512,
+      "sourceSha256": "bae4235d7c61eb9bbfc1797ed04e06399b3bcc30b0f3a53da0cd47f07df4bd9e",
+      "transformation": "Byte-identical configuration from the frozen source archive."
+    },
+    {
+      "path": "fault-gas/campaign_metadata.json",
+      "sha256": "a3abca43663bfe438a8272c275707159ed62a316f6d8de8b6fb4b051c331b8b9",
+      "sizeBytes": 540,
+      "sourceSha256": "0c3ba7f701b1521aea857432cc7e39ad81efac0ae6705410f16f30081f31a050",
+      "transformation": "Allowlisted campaign, runtime, hardware, configuration hash, and public-chain metadata; omitted process diagnostics and unrelated file inventories."
+    },
+    {
+      "path": "fault-gas/fault_raw.jsonl",
+      "sha256": "fae177bfab6a1f4fe2366ea68d1a14e7b282fd3e347f611da4a8e96a585eba01",
+      "sizeBytes": 134123,
+      "sourceSha256": "fae177bfab6a1f4fe2366ea68d1a14e7b282fd3e347f611da4a8e96a585eba01",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "fault-gas/fault_summary.csv",
+      "sha256": "b893d0bb56a1ab90428df8ff46e0eb6d209caacca7b5b52219616559298e828a",
+      "sizeBytes": 1112,
+      "sourceSha256": "b893d0bb56a1ab90428df8ff46e0eb6d209caacca7b5b52219616559298e828a",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "fault-gas/fault_summary.json",
+      "sha256": "f7f73de30282e08e808fd05a65717110ddd32fc4dfdd678f8c5356b1b0f3d68b",
+      "sizeBytes": 2011,
+      "sourceSha256": "f7f73de30282e08e808fd05a65717110ddd32fc4dfdd678f8c5356b1b0f3d68b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "fault-gas/gas_policy_baseline_raw.jsonl",
+      "sha256": "a903ddd107f01ef39393382ef5b10c66fdc70339271353681eb5b37bc12f780b",
+      "sizeBytes": 33134,
+      "sourceSha256": "a903ddd107f01ef39393382ef5b10c66fdc70339271353681eb5b37bc12f780b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "fault-gas/gas_policy_baseline_summary.csv",
+      "sha256": "9ec4004d8be9524dbafda4f3451a698d07dec43043228827d900100d89574583",
+      "sizeBytes": 2193,
+      "sourceSha256": "9ec4004d8be9524dbafda4f3451a698d07dec43043228827d900100d89574583",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "fault-gas/gas_policy_baseline_summary.json",
+      "sha256": "338404f389333361e6d50979caca8ebea4f58e1cb37de2a0e44a32b995443828",
+      "sizeBytes": 4115,
+      "sourceSha256": "338404f389333361e6d50979caca8ebea4f58e1cb37de2a0e44a32b995443828",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "fault-gas/gas_policy_comparisons.json",
+      "sha256": "248cfae4d577d351787b6a7f61f676d74d031bbee4510f635edf408531c1b756",
+      "sizeBytes": 794,
+      "sourceSha256": "248cfae4d577d351787b6a7f61f676d74d031bbee4510f635edf408531c1b756",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "fault-gas/local_gas_raw.jsonl",
+      "sha256": "a68d358ee838a26d034872a62ffd09cea77863a02da45ac1f58063b7ad07a479",
+      "sizeBytes": 21631,
+      "sourceSha256": "a68d358ee838a26d034872a62ffd09cea77863a02da45ac1f58063b7ad07a479",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "fault-gas/local_gas_summary.csv",
+      "sha256": "5ed7a0da328b7eff7f7567063853632f7c1918a01e156f10209cc698b690db8c",
+      "sizeBytes": 1608,
+      "sourceSha256": "5ed7a0da328b7eff7f7567063853632f7c1918a01e156f10209cc698b690db8c",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "fault-gas/local_gas_summary.json",
+      "sha256": "f232ebcfb47eb661f8d375403323f888455e9c98dbe28e048f39e9c7a51236d3",
+      "sizeBytes": 3692,
+      "sourceSha256": "f232ebcfb47eb661f8d375403323f888455e9c98dbe28e048f39e9c7a51236d3",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "llm/campaign_config.json",
+      "sha256": "ed01bc1c5449081812ba4722b2ae2fb832622fe7d0a4997fa472eb23111c536d",
+      "sizeBytes": 490,
+      "sourceSha256": "ed01bc1c5449081812ba4722b2ae2fb832622fe7d0a4997fa472eb23111c536d",
+      "transformation": "Byte-identical configuration from the frozen source archive."
+    },
+    {
+      "path": "llm/campaign_metadata.json",
+      "sha256": "8706f831076ebb978e8b4a939c2b1bbd11cdd4417bf150eb69153a0976bd76e4",
+      "sizeBytes": 528,
+      "sourceSha256": "7198ae9490624cee830d1c14b8a9b8b985aeeb01aee9607b47c9c237db666e1a",
+      "transformation": "Allowlisted campaign, runtime, hardware, configuration hash, and public-chain metadata; omitted process diagnostics and unrelated file inventories."
+    },
+    {
+      "path": "llm/real_llm_raw.jsonl",
+      "sha256": "bbd3690196ae4e18af5c2aade6348da85642cf9058561b86310782a5cea35a3f",
+      "sizeBytes": 10483,
+      "sourceSha256": "8e2cee24cc0912ec18e6aebe89ddd84d82606d18d9e5d674f799e9038c8448e2",
+      "transformation": "Removed API responseId only; all measurements, sample order and warm-ups retained."
+    },
+    {
+      "path": "llm/real_llm_summary.csv",
+      "sha256": "086f90d08e33bf0dab5b1c335add08cbbf384357914bd3176ec76cf207bfd02b",
+      "sizeBytes": 2767,
+      "sourceSha256": "086f90d08e33bf0dab5b1c335add08cbbf384357914bd3176ec76cf207bfd02b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "llm/real_llm_summary.json",
+      "sha256": "44fb5be419b738d48d9e1d70ccc3f8f6006cd2063a7e308224b3400bf9b9664f",
+      "sizeBytes": 5423,
+      "sourceSha256": "44fb5be419b738d48d9e1d70ccc3f8f6006cd2063a7e308224b3400bf9b9664f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "local/batch_policy_summary.csv",
+      "sha256": "a7e39003923daaa842458dca8a97da1439ed3549864e15de381f546078c98bc2",
+      "sizeBytes": 6063,
+      "sourceSha256": "a7e39003923daaa842458dca8a97da1439ed3549864e15de381f546078c98bc2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "local/batch_policy_summary.json",
+      "sha256": "543e078815a09341b5aa0dc9b0aaec39e22007fac5209ac79e58375c06aaf1f2",
+      "sizeBytes": 11730,
+      "sourceSha256": "543e078815a09341b5aa0dc9b0aaec39e22007fac5209ac79e58375c06aaf1f2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "local/campaign_config.json",
+      "sha256": "0390106a173bff92f8da1cdb3eda22bb6fc30c7e56632ee4b139bb16906b8229",
+      "sizeBytes": 1066,
+      "sourceSha256": "0390106a173bff92f8da1cdb3eda22bb6fc30c7e56632ee4b139bb16906b8229",
+      "transformation": "Byte-identical configuration from the frozen source archive."
+    },
+    {
+      "path": "local/campaign_metadata.json",
+      "sha256": "5ae49bb518fc67d4f1902156123448b6b1185f94462074de956d6e2664fc0f6f",
+      "sizeBytes": 1005,
+      "sourceSha256": "153acec18b85ac8ec73b41bb2626b9116d3233cff4097d352504ed6dd99a0a9b",
+      "transformation": "Allowlisted campaign, runtime, hardware, configuration hash, and public-chain metadata; omitted process diagnostics and unrelated file inventories."
+    },
+    {
+      "path": "local/protocol_raw.jsonl",
+      "sha256": "432d4cfa005231ac7f5886e127be5de3fa031def7bd7c9553fc908efcb525439",
+      "sizeBytes": 734248,
+      "sourceSha256": "432d4cfa005231ac7f5886e127be5de3fa031def7bd7c9553fc908efcb525439",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "local/protocol_summary.csv",
+      "sha256": "f82c7e174668546fff4668437f8aff532d3a1b8ee7f425e55e6746ef31030413",
+      "sizeBytes": 31973,
+      "sourceSha256": "f82c7e174668546fff4668437f8aff532d3a1b8ee7f425e55e6746ef31030413",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "local/protocol_summary.json",
+      "sha256": "f8451893054b1a06a351a177388901bac93370b9a6f51f610a932f05c06217da",
+      "sizeBytes": 65931,
+      "sourceSha256": "f8451893054b1a06a351a177388901bac93370b9a6f51f610a932f05c06217da",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "local/zk_raw.jsonl",
+      "sha256": "4b7f766356439258ef38519239b4c8358c3bb196f0ffa48b414dce411174fbb9",
+      "sizeBytes": 12197,
+      "sourceSha256": "4b7f766356439258ef38519239b4c8358c3bb196f0ffa48b414dce411174fbb9",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "local/zk_summary.csv",
+      "sha256": "7713ac1119c3ca5c47e9221f6a0df164f0c28740f7a837930ceb9f32272503f8",
+      "sizeBytes": 3512,
+      "sourceSha256": "7713ac1119c3ca5c47e9221f6a0df164f0c28740f7a837930ceb9f32272503f8",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "local/zk_summary.json",
+      "sha256": "c7b57cc755e44bad87ed3d5d22695b839b9fd14b870053ed3b3a8c515adf888b",
+      "sizeBytes": 6873,
+      "sourceSha256": "c7b57cc755e44bad87ed3d5d22695b839b9fd14b870053ed3b3a8c515adf888b",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "testnet/campaign_config.json",
+      "sha256": "dbeeca59f895f751ba345adce1050fc000f24490b9b5453bd3d4d68be4ade3ea",
+      "sizeBytes": 521,
+      "sourceSha256": "dbeeca59f895f751ba345adce1050fc000f24490b9b5453bd3d4d68be4ade3ea",
+      "transformation": "Byte-identical configuration from the frozen source archive."
+    },
+    {
+      "path": "testnet/campaign_metadata.json",
+      "sha256": "39b5796c424d39beba9c24b6e9c9991196ecf3dca4d45150b65e89d86ea5cab7",
+      "sizeBytes": 963,
+      "sourceSha256": "7ab7e707c2d705e41dd910f8c652fd9e719e36193a52b6c146430e65e9813e35",
+      "transformation": "Allowlisted campaign, runtime, hardware, configuration hash, and public-chain metadata; omitted process diagnostics and unrelated file inventories."
+    },
+    {
+      "path": "testnet/testnet_v2_raw.jsonl",
+      "sha256": "5d3f0c877c09012f818f72d815cbd403e238bd16b8b24b37485d63d6a6c8640c",
+      "sizeBytes": 6013,
+      "sourceSha256": "5d3f0c877c09012f818f72d815cbd403e238bd16b8b24b37485d63d6a6c8640c",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "testnet/testnet_v2_summary.csv",
+      "sha256": "dd295b5c16e32de9ae3486a6a025ce949433d13f406a1479ba789106dc96c577",
+      "sizeBytes": 2526,
+      "sourceSha256": "dd295b5c16e32de9ae3486a6a025ce949433d13f406a1479ba789106dc96c577",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "testnet/testnet_v2_summary.json",
+      "sha256": "ba81a7d87757c9f381c18b5c541aa2311edfce3c507f0e4d5cbe4a842507bbe2",
+      "sizeBytes": 4604,
+      "sourceSha256": "ba81a7d87757c9f381c18b5c541aa2311edfce3c507f0e4d5cbe4a842507bbe2",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "testnet/withdrawal_public_testnet.jsonl",
+      "sha256": "5b996dc3ad3944942ebdc475ed17caf3fa2c632985fb375af9c431abd61bcafe",
+      "sizeBytes": 4028,
+      "sourceSha256": "5b996dc3ad3944942ebdc475ed17caf3fa2c632985fb375af9c431abd61bcafe",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "verification/circuit-boundaries.json",
+      "sha256": "4397fc0123353160c32466c8d94ac09e018d6ab129d4b811fe8f2516edaa4b11",
+      "sizeBytes": 951,
+      "sourceSha256": "4397fc0123353160c32466c8d94ac09e018d6ab129d4b811fe8f2516edaa4b11",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "verification/formal-verification.json",
+      "sha256": "3ae90959b0db8020698ce41eb14f55dabceab105147685b38393a9f58a8eb32f",
+      "sizeBytes": 2551,
+      "sourceSha256": "3ae90959b0db8020698ce41eb14f55dabceab105147685b38393a9f58a8eb32f",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "verification/proof-to-settlement.json",
+      "sha256": "14dc050cb0eb177198b7af7ba1972f1fa211580b2073c7ef252c68b46b63a5dd",
+      "sizeBytes": 365,
+      "sourceSha256": "14dc050cb0eb177198b7af7ba1972f1fa211580b2073c7ef252c68b46b63a5dd",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "verification/regression-results.json",
+      "sha256": "e56ad23c9e19de6d0ebd08b2c9a4481bc87ceb4d083764a13558d5f5dcc64b3d",
+      "sizeBytes": 5538,
+      "sourceSha256": "5156debcd5412baa1594d36b8d489c63cc50b35267b7b6c30c53d11d5481c51d",
+      "transformation": "Extracted the 75 successful test names; omitted console diagnostics and local environment paths."
+    },
+    {
+      "path": "wan/campaign_config.json",
+      "sha256": "77ee6127e75d3e42cb9e914a819f0fcbe3c41e18d3c4927f7dc3f969f380d41b",
+      "sizeBytes": 913,
+      "sourceSha256": "a99d1e3887cc4ebd99e681087fba945f1508822a9f4334ea804017a7f7337b8d",
+      "transformation": "Remote endpoint, account and runtime/key paths replaced by placeholders; workload and timing parameters retained."
+    },
+    {
+      "path": "wan/campaign_metadata.json",
+      "sha256": "4a7984cdc782af906b7416a427d41d1071b6b6b53ca7311685cf0dc340d7a9e3",
+      "sizeBytes": 883,
+      "sourceSha256": "a2791ad71aa6a698910a6a244179e1806ea0cfe78b9f9dbae645395cbe46eead",
+      "transformation": "Allowlisted campaign, runtime, hardware, configuration hash, and public-chain metadata; omitted process diagnostics and unrelated file inventories."
+    },
+    {
+      "path": "wan/wan_raw.jsonl",
+      "sha256": "07552cf5792dec21503c439886e00585fe587b0378e9958b0cd9c3ac16eb4738",
+      "sizeBytes": 813341,
+      "sourceSha256": "07552cf5792dec21503c439886e00585fe587b0378e9958b0cd9c3ac16eb4738",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "wan/wan_summary.csv",
+      "sha256": "86e8da321013a177f76199bf23735ae203e89ab73828c89820ef7c1f89daac69",
+      "sizeBytes": 18832,
+      "sourceSha256": "86e8da321013a177f76199bf23735ae203e89ab73828c89820ef7c1f89daac69",
+      "transformation": "byte-identical copy"
+    },
+    {
+      "path": "wan/wan_summary.json",
+      "sha256": "c066158867ef16cc5de984a997d1b4189ab482a8e23ed58e3eb712356825933c",
+      "sizeBytes": 36512,
+      "sourceSha256": "c066158867ef16cc5de984a997d1b4189ab482a8e23ed58e3eb712356825933c",
+      "transformation": "byte-identical copy"
+    }
+  ]
+}

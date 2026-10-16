@@ -1,0 +1,70 @@
+{
+  "queries": 12,
+  "passed": true,
+  "modelSha256": "4c1283785e3e66f0003d9b8def23cba973f13b9006d2cc4873b37e10af1c1ca0",
+  "results": [
+    "RESULT not attacker(issuerKey[]) is true.",
+    "RESULT not attacker(buyerKey[]) is true.",
+    "RESULT not attacker(providerKey[]) is true.",
+    "RESULT not attacker(endpointKey[]) is true.",
+    "RESULT event(RootUsed(callId_4,root_3)) ==> event(RootIssued(root_3)) is true.",
+    "RESULT event(Settled(callId_4)) ==> event(BatchVerified(callId_4)) is true.",
+    "RESULT event(Settled(callId_4)) ==> event(KeyReleased(callId_4)) is true.",
+    "RESULT event(Settled(callId_4)) ==> event(BuyerConfirmed(callId_4)) is true.",
+    "RESULT event(Settled(callId_4)) ==> event(ProviderCommitted(callId_4)) is true.",
+    "RESULT event(Settled(callId_4)) ==> event(ChildDelegated(callId_4)) is true.",
+    "RESULT inj-event(BuyerConfirmed(callId_4)) ==> inj-event(ProviderCommitted(callId_4)) is true.",
+    "RESULT inj-event(KeyReleased(callId_4)) ==> inj-event(BuyerConfirmed(callId_4)) is true."
+  ],
+  "stateModel": {
+    "model": "zk-CrossAgent v2 bounded explicit-state model",
+    "configuration": {
+      "calls": 2,
+      "callAmounts": [
+        2,
+        2
+      ],
+      "rootBudget": 3,
+      "finalityDepth": 2,
+      "crashBound": 1,
+      "temporaryReorgBound": 1
+    },
+    "result": "PASS",
+    "statesExplored": 4929,
+    "transitionsExplored": 10602,
+    "maximumDepth": 25,
+    "invariants": [
+      "reservedAmount + settledAmount <= rootBudget",
+      "stored reservation counters equal active obligations",
+      "call states never move backward",
+      "consumed nonces are never forgotten",
+      "no call transfers funds more than once",
+      "settlement requires a finalized relayed root",
+      "recorded settlement implies exactly one chain payment"
+    ],
+    "actionCoverage": {
+      "AdvanceFinality": 576,
+      "BuyerConfirm": 48,
+      "Crash": 1632,
+      "DuplicateSourceEvent": 192,
+      "ExpireUnconfirmed": 96,
+      "KeyRelease": 48,
+      "MineSettlement": 576,
+      "ObserveSource": 144,
+      "ProofAccepted": 48,
+      "ProviderCommit": 48,
+      "RecordSettlement": 768,
+      "RelayFinalizedRoot": 192,
+      "ReplayNonceRejected": 2744,
+      "ReserveAccepted": 18,
+      "ReserveRejectedBudget": 544,
+      "Restart": 1632,
+      "RetrySameTransaction": 384,
+      "RpcFailure": 192,
+      "SealBatch": 48,
+      "SubmitSettlement": 384,
+      "TemporaryReorg": 288
+    }
+  },
+  "scope": "Original formal models rerun; withdrawal/release are not modeled"
+}

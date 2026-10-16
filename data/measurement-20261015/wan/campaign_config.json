@@ -1,0 +1,41 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "fgcs-submission-20261015-wan-key-static",
+  "campaignClass": "final-submission-remeasurement",
+  "randomSeed": 20260801,
+  "regions": {
+    "coordinator": "SeetaCloud Northwest-B",
+    "provider": "SeetaCloud Beijing-B"
+  },
+  "remote": {
+    "host": "REVIEWER_ENDPOINT",
+    "port": 22,
+    "user": "REVIEWER_CONFIGURED_VALUE",
+    "providerPath": "REVIEWER_CONFIGURED_VALUE",
+    "nodePath": "REVIEWER_CONFIGURED_VALUE"
+  },
+  "network": {
+    "warmupSamples": 10,
+    "roundTripSamples": 100,
+    "handshakeWarmups": 2,
+    "handshakeSamples": 10
+  },
+  "protocol": {
+    "warmupSamples": 10,
+    "measuredSamples": 100,
+    "concurrencyLevels": [
+      1,
+      4,
+      8,
+      16
+    ],
+    "payloadBytes": 4096,
+    "serviceDelayMs": 5
+  },
+  "recovery": {
+    "warmupSamples": 2,
+    "measuredSamples": 20,
+    "payloadBytes": 4096,
+    "serviceDelayMs": 5
+  }
+}

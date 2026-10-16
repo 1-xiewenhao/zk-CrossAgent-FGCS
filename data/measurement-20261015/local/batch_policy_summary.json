@@ -1,0 +1,488 @@
+[
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 0.5,
+    "batchSize": 4,
+    "timeoutMs": 250,
+    "arrivals": 5000,
+    "batches": 4436,
+    "dummySlots": 12744,
+    "dummyRatio": 0.718214607754734,
+    "meanFill": 1.127141568981064,
+    "waitMs": {
+      "count": 5000,
+      "mean": 235.07760908149214,
+      "stddev": 48.203559716764296,
+      "ci95": [
+        233.7414745745324,
+        236.4137435884519
+      ],
+      "p50": 250,
+      "p95": 250,
+      "p99": 250,
+      "min": 0.2692572381347418,
+      "max": 250.00000000023283
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 0.5,
+    "batchSize": 4,
+    "timeoutMs": 1000,
+    "arrivals": 5000,
+    "batches": 3375,
+    "dummySlots": 8500,
+    "dummyRatio": 0.6296296296296297,
+    "meanFill": 1.4814814814814814,
+    "waitMs": {
+      "count": 5000,
+      "mean": 829.8320490201153,
+      "stddev": 294.8024415488243,
+      "ci95": [
+        821.6605422433579,
+        838.0035557968727
+      ],
+      "p50": 1000,
+      "p95": 1000,
+      "p99": 1000,
+      "min": 0,
+      "max": 1000.0000000000009
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 0.5,
+    "batchSize": 8,
+    "timeoutMs": 250,
+    "arrivals": 5000,
+    "batches": 4440,
+    "dummySlots": 30520,
+    "dummyRatio": 0.8592342342342343,
+    "meanFill": 1.1261261261261262,
+    "waitMs": {
+      "count": 5000,
+      "mean": 236.363739805138,
+      "stddev": 45.05549592107047,
+      "ci95": [
+        235.11486517467395,
+        237.61261443560207
+      ],
+      "p50": 250,
+      "p95": 250,
+      "p99": 250,
+      "min": 0.7469366299919784,
+      "max": 250
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 0.5,
+    "batchSize": 8,
+    "timeoutMs": 1000,
+    "arrivals": 5000,
+    "batches": 3313,
+    "dummySlots": 21504,
+    "dummyRatio": 0.8113492303048596,
+    "meanFill": 1.5092061575611229,
+    "waitMs": {
+      "count": 5000,
+      "mean": 833.2842445675308,
+      "stddev": 287.3960628795462,
+      "ci95": [
+        825.3180321335518,
+        841.2504570015097
+      ],
+      "p50": 1000,
+      "p95": 1000,
+      "p99": 1000,
+      "min": 0.011306242551654577,
+      "max": 1000.0000000000291
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 0.5,
+    "batchSize": 16,
+    "timeoutMs": 250,
+    "arrivals": 5000,
+    "batches": 4429,
+    "dummySlots": 65864,
+    "dummyRatio": 0.9294423120343193,
+    "meanFill": 1.1289230074508918,
+    "waitMs": {
+      "count": 5000,
+      "mean": 234.68529725899165,
+      "stddev": 49.146921717542476,
+      "ci95": [
+        233.32301409145165,
+        236.04758042653165
+      ],
+      "p50": 250,
+      "p95": 250,
+      "p99": 250,
+      "min": 0.1967789833433926,
+      "max": 250
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 0.5,
+    "batchSize": 16,
+    "timeoutMs": 1000,
+    "arrivals": 5000,
+    "batches": 3331,
+    "dummySlots": 48296,
+    "dummyRatio": 0.9061843290303212,
+    "meanFill": 1.5010507355148603,
+    "waitMs": {
+      "count": 5000,
+      "mean": 831.7764076920506,
+      "stddev": 289.78801975799155,
+      "ci95": [
+        823.7438935960528,
+        839.8089217880485
+      ],
+      "p50": 1000,
+      "p95": 1000,
+      "p99": 1000,
+      "min": 0.26835249550640583,
+      "max": 1000.0000000000001
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 5,
+    "batchSize": 4,
+    "timeoutMs": 250,
+    "arrivals": 5000,
+    "batches": 2315,
+    "dummySlots": 4260,
+    "dummyRatio": 0.46004319654427644,
+    "meanFill": 2.159827213822894,
+    "waitMs": {
+      "count": 5000,
+      "mean": 168.11628844826396,
+      "stddev": 89.77886587579918,
+      "ci95": [
+        165.62774524943777,
+        170.60483164709015
+      ],
+      "p50": 202.71673873835243,
+      "p95": 250,
+      "p99": 250,
+      "min": 0,
+      "max": 250
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 5,
+    "batchSize": 4,
+    "timeoutMs": 1000,
+    "arrivals": 5000,
+    "batches": 1302,
+    "dummySlots": 208,
+    "dummyRatio": 0.039938556067588324,
+    "meanFill": 3.8402457757296466,
+    "waitMs": {
+      "count": 5000,
+      "mean": 290.30972144749114,
+      "stddev": 286.05210614854934,
+      "ci95": [
+        282.3807615935021,
+        298.2386813014802
+      ],
+      "p50": 219.11917855741194,
+      "p95": 889.2257845811897,
+      "p99": 1000,
+      "min": 0,
+      "max": 1000.0000000000146
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 5,
+    "batchSize": 8,
+    "timeoutMs": 250,
+    "arrivals": 5000,
+    "batches": 2210,
+    "dummySlots": 12680,
+    "dummyRatio": 0.7171945701357466,
+    "meanFill": 2.262443438914027,
+    "waitMs": {
+      "count": 5000,
+      "mean": 179.91246206158866,
+      "stddev": 82.13403117982773,
+      "ci95": [
+        177.63582286938168,
+        182.18910125379563
+      ],
+      "p50": 221.1126942713454,
+      "p95": 250,
+      "p99": 250,
+      "min": 0.0860301626380533,
+      "max": 250.0000000000582
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 5,
+    "batchSize": 8,
+    "timeoutMs": 1000,
+    "arrivals": 5000,
+    "batches": 882,
+    "dummySlots": 2056,
+    "dummyRatio": 0.29138321995464855,
+    "meanFill": 5.668934240362812,
+    "waitMs": {
+      "count": 5000,
+      "mean": 535.4817529623408,
+      "stddev": 330.8900498247126,
+      "ci95": [
+        526.309948718459,
+        544.6535572062226
+      ],
+      "p50": 529.2926914462005,
+      "p95": 1000,
+      "p99": 1000,
+      "min": 0,
+      "max": 1000.0000000000146
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 5,
+    "batchSize": 16,
+    "timeoutMs": 250,
+    "arrivals": 5000,
+    "batches": 2241,
+    "dummySlots": 30856,
+    "dummyRatio": 0.8605533244087461,
+    "meanFill": 2.2311468094600624,
+    "waitMs": {
+      "count": 5000,
+      "mean": 179.85472066254755,
+      "stddev": 82.79182355997374,
+      "ci95": [
+        177.5598483957981,
+        182.149592929297
+      ],
+      "p50": 227.55532575509278,
+      "p95": 250,
+      "p99": 250,
+      "min": 0.015587706060614437,
+      "max": 250
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 5,
+    "batchSize": 16,
+    "timeoutMs": 1000,
+    "arrivals": 5000,
+    "batches": 824,
+    "dummySlots": 8184,
+    "dummyRatio": 0.620752427184466,
+    "meanFill": 6.067961165048544,
+    "waitMs": {
+      "count": 5000,
+      "mean": 580.9862025242319,
+      "stddev": 323.72878421521295,
+      "ci95": [
+        572.0128984357448,
+        589.959506612719
+      ],
+      "p50": 597.1903917276304,
+      "p95": 1000,
+      "p99": 1000,
+      "min": 0.008773469016887248,
+      "max": 1000.0000000000036
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 50,
+    "batchSize": 4,
+    "timeoutMs": 250,
+    "arrivals": 5000,
+    "batches": 1250,
+    "dummySlots": 0,
+    "dummyRatio": 0,
+    "meanFill": 4,
+    "waitMs": {
+      "count": 5000,
+      "mean": 30.13384715412736,
+      "stddev": 33.81202405155092,
+      "ci95": [
+        29.19662566362158,
+        31.071068644633137
+      ],
+      "p50": 20.16621875702549,
+      "p95": 96.92778929819761,
+      "p99": 144.46029595416925,
+      "min": 0,
+      "max": 239.00802117618753
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 50,
+    "batchSize": 4,
+    "timeoutMs": 1000,
+    "arrivals": 5000,
+    "batches": 1250,
+    "dummySlots": 0,
+    "dummyRatio": 0,
+    "meanFill": 4,
+    "waitMs": {
+      "count": 5000,
+      "mean": 29.468071117806087,
+      "stddev": 31.930863291113877,
+      "ci95": [
+        28.58299274328443,
+        30.353149492327745
+      ],
+      "p50": 20.720374588305276,
+      "p95": 92.55609768467767,
+      "p99": 132.91917982465944,
+      "min": 0,
+      "max": 206.44876498934173
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 50,
+    "batchSize": 8,
+    "timeoutMs": 250,
+    "arrivals": 5000,
+    "batches": 630,
+    "dummySlots": 40,
+    "dummyRatio": 0.007936507936507936,
+    "meanFill": 7.936507936507937,
+    "waitMs": {
+      "count": 5000,
+      "mean": 68.97809982035145,
+      "stddev": 56.92926525605875,
+      "ci95": [
+        67.40010109553879,
+        70.5560985451641
+      ],
+      "p50": 59.29006169582317,
+      "p95": 176.925875751015,
+      "p99": 225.3622342337354,
+      "min": 0,
+      "max": 250.00000000000728
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 50,
+    "batchSize": 8,
+    "timeoutMs": 1000,
+    "arrivals": 5000,
+    "batches": 625,
+    "dummySlots": 0,
+    "dummyRatio": 0,
+    "meanFill": 8,
+    "waitMs": {
+      "count": 5000,
+      "mean": 68.74734730611702,
+      "stddev": 57.77247969564101,
+      "ci95": [
+        67.14597586949402,
+        70.34871874274002
+      ],
+      "p50": 58.47017422732824,
+      "p95": 177.10848397927458,
+      "p99": 227.66954785508753,
+      "min": 0,
+      "max": 369.6270742287643
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 50,
+    "batchSize": 16,
+    "timeoutMs": 250,
+    "arrivals": 5000,
+    "batches": 378,
+    "dummySlots": 1048,
+    "dummyRatio": 0.17328042328042328,
+    "meanFill": 13.227513227513228,
+    "waitMs": {
+      "count": 5000,
+      "mean": 125.5657859222021,
+      "stddev": 76.09040211605883,
+      "ci95": [
+        123.45666758087862,
+        127.67490426352558
+      ],
+      "p50": 125.11785740278356,
+      "p95": 250,
+      "p99": 250,
+      "min": 0,
+      "max": 250.00000000000182
+    }
+  },
+  {
+    "schemaVersion": 1,
+    "recordType": "batch_policy_summary",
+    "campaignId": "fgcs-submission-20261015-local",
+    "arrivalRatePerSecond": 50,
+    "batchSize": 16,
+    "timeoutMs": 1000,
+    "arrivals": 5000,
+    "batches": 313,
+    "dummySlots": 8,
+    "dummyRatio": 0.001597444089456869,
+    "meanFill": 15.97444089456869,
+    "waitMs": {
+      "count": 5000,
+      "mean": 147.81396705974686,
+      "stddev": 111.01413640976698,
+      "ci95": [
+        144.7368121921606,
+        150.8911219273331
+      ],
+      "p50": 135.402072380175,
+      "p95": 337.68573091108783,
+      "p99": 425.59550513030547,
+      "min": 0,
+      "max": 1000
+    }
+  }
+]

@@ -1,0 +1,162 @@
+[
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "policy": "zk_batch_amortized",
+    "realCount": 1,
+    "metric": "gasPerReceipt",
+    "derivation": "settlementGas + (batchRootGas + verifierGas) / realCount",
+    "count": 16,
+    "mean": 1621142.25,
+    "stddev": 2413.5365890465937,
+    "ci95": [
+      1619959.617071367,
+      1622324.882928633
+    ],
+    "p50": 1621720,
+    "p95": 1621826,
+    "p99": 1622054,
+    "min": 1612099,
+    "max": 1622111
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "policy": "zk_batch_amortized",
+    "realCount": 4,
+    "metric": "gasPerReceipt",
+    "derivation": "settlementGas + (batchRootGas + verifierGas) / realCount",
+    "count": 16,
+    "mean": 1331368.875,
+    "stddev": 2407.8400521352464,
+    "ci95": [
+      1330189.0333744537,
+      1332548.7166255463
+    ],
+    "p50": 1331962.25,
+    "p95": 1332006.5,
+    "p99": 1332067.1,
+    "min": 1322340.25,
+    "max": 1332082.25
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "policy": "zk_batch_amortized",
+    "realCount": 8,
+    "metric": "gasPerReceipt",
+    "derivation": "settlementGas + (batchRootGas + verifierGas) / realCount",
+    "count": 16,
+    "mean": 1283073.3125,
+    "stddev": 2407.0772794338504,
+    "ci95": [
+      1281893.8446330775,
+      1284252.7803669225
+    ],
+    "p50": 1283669.125,
+    "p95": 1283703.25,
+    "p99": 1283735.9500000002,
+    "min": 1274047.125,
+    "max": 1283744.125
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "policy": "zk_batch_amortized",
+    "realCount": 16,
+    "metric": "gasPerReceipt",
+    "derivation": "settlementGas + (batchRootGas + verifierGas) / realCount",
+    "count": 16,
+    "mean": 1258925.53125,
+    "stddev": 2406.715943415771,
+    "ci95": [
+      1257746.2404377263,
+      1260104.8220622737
+    ],
+    "p50": 1259522.5625,
+    "p95": 1259551.625,
+    "p99": 1259570.375,
+    "min": 1249900.5625,
+    "max": 1259575.0625
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "policy": "non_zk_batch_amortized",
+    "realCount": 1,
+    "metric": "gasPerReceipt",
+    "derivation": "settlementGas + batchRootGas / realCount",
+    "count": 16,
+    "mean": 1372253.25,
+    "stddev": 2413.5365890465937,
+    "ci95": [
+      1371070.617071367,
+      1373435.882928633
+    ],
+    "p50": 1372831,
+    "p95": 1372937,
+    "p99": 1373165,
+    "min": 1363210,
+    "max": 1373222
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "policy": "non_zk_batch_amortized",
+    "realCount": 4,
+    "metric": "gasPerReceipt",
+    "derivation": "settlementGas + batchRootGas / realCount",
+    "count": 16,
+    "mean": 1269146.625,
+    "stddev": 2407.8400521352464,
+    "ci95": [
+      1267966.7833744537,
+      1270326.4666255463
+    ],
+    "p50": 1269740,
+    "p95": 1269784.25,
+    "p99": 1269844.85,
+    "min": 1260118,
+    "max": 1269860
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "policy": "non_zk_batch_amortized",
+    "realCount": 8,
+    "metric": "gasPerReceipt",
+    "derivation": "settlementGas + batchRootGas / realCount",
+    "count": 16,
+    "mean": 1251962.1875,
+    "stddev": 2407.0772794338504,
+    "ci95": [
+      1250782.7196330775,
+      1253141.6553669225
+    ],
+    "p50": 1252558,
+    "p95": 1252592.125,
+    "p99": 1252624.825,
+    "min": 1242936,
+    "max": 1252633
+  },
+  {
+    "campaignId": "fgcs-submission-20261015-fault-gas",
+    "network": "hardhat-local",
+    "policy": "non_zk_batch_amortized",
+    "realCount": 16,
+    "metric": "gasPerReceipt",
+    "derivation": "settlementGas + batchRootGas / realCount",
+    "count": 16,
+    "mean": 1243369.96875,
+    "stddev": 2406.715943415771,
+    "ci95": [
+      1242190.6779377263,
+      1244549.2595622737
+    ],
+    "p50": 1243967,
+    "p95": 1243996.0625,
+    "p99": 1244014.8125,
+    "min": 1234345,
+    "max": 1244019.5
+  }
+]

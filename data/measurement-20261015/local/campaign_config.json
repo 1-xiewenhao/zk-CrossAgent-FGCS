@@ -1,0 +1,67 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "fgcs-submission-20261015-local",
+  "campaignClass": "final-submission-remeasurement",
+  "randomSeed": 20260801,
+  "protocol": {
+    "warmupSamples": 10,
+    "measuredSamples": 100,
+    "concurrencyLevels": [
+      1,
+      8,
+      32,
+      64
+    ],
+    "wanRttMs": [
+      0,
+      20,
+      80
+    ],
+    "wanSamples": 30,
+    "payloadBytes": [
+      256,
+      4096,
+      65536
+    ],
+    "ablations": [
+      "authorization_only",
+      "committed_delivery",
+      "fair_release"
+    ]
+  },
+  "batchPolicy": {
+    "arrivalRatesPerSecond": [
+      0.5,
+      5,
+      50
+    ],
+    "batchSizes": [
+      4,
+      8,
+      16
+    ],
+    "timeoutsMs": [
+      250,
+      1000
+    ],
+    "arrivalsPerSetting": 5000
+  },
+  "zk": {
+    "realCounts": [
+      1,
+      4,
+      8,
+      16
+    ],
+    "warmupRounds": 1,
+    "measuredRounds": 10
+  },
+  "statistics": {
+    "percentiles": [
+      50,
+      95,
+      99
+    ],
+    "confidenceLevel": 0.95
+  }
+}

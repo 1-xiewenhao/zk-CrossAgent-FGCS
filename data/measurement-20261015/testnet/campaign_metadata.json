@@ -1,0 +1,22 @@
+{
+  "schemaVersion": 1,
+  "campaignId": "fgcs-submission-20261015-testnet",
+  "campaignClass": "final-submission-remeasurement",
+  "generatedAt": "2026-10-15T14:22:51.724Z",
+  "configPath": "experiments/v2/configs/submission-testnet-20261015.json",
+  "configSha256": "dbeeca59f895f751ba345adce1050fc000f24490b9b5453bd3d4d68be4ade3ea",
+  "host": {
+    "platform": "linux",
+    "release": "5.15.0-78-generic",
+    "architecture": "x64"
+  },
+  "addresses": {
+    "verifier": "0x0191DF4d6b12581075D84a3a47D255631170EB42",
+    "registry": "0x6D7c1454C56D4a41F04d12c1339755b193D286a9",
+    "poseidon2": "0x4b3872ada110293ae6eB711526c03c220f8352e8",
+    "poseidon6": "0xa058fFbb2b4b62b623faF490381A8dC35499aFe1",
+    "escrow": "0x3ae035A168eCB7e2dA15e766fC6C7415F798450d"
+  },
+  "settlementDomainHash": "0xaa819650786e4b6cc2ecd97b10771dd7516a9030600acb9bef03c8fa8a9c9719",
+  "originalManifestSha256": "7ab7e707c2d705e41dd910f8c652fd9e719e36193a52b6c146430e65e9813e35"
+}
